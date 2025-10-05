@@ -50,16 +50,12 @@ export class UploadComponent {
     this.error = undefined;
 
     this.employeesService.uploadCsv(this.selectedFile).subscribe({
-      // ✅ Only success here
       next: (res: ProcessingResult) => {
         this.result = res;
         this.isLoading = false;
         this.snackBar.open('Analysis complete', 'Close', { duration: 3000 });
         this.fileInput.nativeElement.value = '';
-      },
-
-      // ✅ Only error handling here
-      error: (err) => {
+      }, error: (err) => {
         this.result = undefined;
         this.isLoading = false;
 
@@ -73,6 +69,4 @@ export class UploadComponent {
       }
     });
   }
-
-
 }

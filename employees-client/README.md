@@ -1,59 +1,46 @@
-# EmployeesClient
+# Employee Pair Analyzer
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 20.3.4.
+A full-stack solution built with **Angular** (Material UI) and **.NET 8 Web API** that:
 
-## Development server
+- Accepts a CSV file with employee project assignments
+- Analyzes overlapping days between employee pairs on shared projects
+- Displays the top employee pair and their shared project breakdown
+- Handles multiple date formats (`dd/MM/yyyy`, `yyyy-MM-dd`, etc.)
+- Fully styled with Angular Material and DataGrid table
 
-To start a local development server, run:
+---
 
-```bash
-ng serve
-```
+##  Tech Stack
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+| Frontend | Backend |
+|----------|---------|
+| Angular 20 | .NET 8 Web API |
+| Angular Material | CsvHelper for parsing |
+| RxJS | CORS enabled |
+| MatTable for result view | Custom date converter |
 
-## Code scaffolding
+---
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+## Running the Project Locally
 
-```bash
-ng generate component component-name
-```
-
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
-
-```bash
-ng generate --help
-```
-
-## Building
-
-To build the project run:
+### 1. Clone the repo
 
 ```bash
-ng build
-```
+git clone https://github.com/YOUR_USERNAME/Mihail-Stoyanov-employees.git
+cd Mihail-Stoyanov-employees
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+### One-Command Start (Recommended)
 
-## Running unit tests
-
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
+> Run this command to launch the entire full-stack project (frontend + backend):
 
 ```bash
-ng test
-```
+cd employees-client
+npm install
+npm start
 
-## Running end-to-end tests
+#### Multi-Command Start
 
-For end-to-end (e2e) testing, run:
+Start the Angular frontend on http://localhost:4200
+Start the .NET backend API on http://localhost:5001
 
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+This project is shared for evaluation purposes only. All rights reserved.
