@@ -1,0 +1,6 @@
+@Mihail_Stoyanov_employees_HostAddress = http://localhost:4200
+
+GET {{Mihail_Stoyanov_employees_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
